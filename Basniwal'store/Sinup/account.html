@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--css-file------------------>
+  <link rel="stylesheet" href="css/index.css">
+<!--using-FontAwesome--------->
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous">
+</script>
+<title>Sign In</title>
+  <title>Sign up/login</title>
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+<!--          ---------------            -->
+</head>
+
+<body>
+  
+
+<section class="sign-in">
+  <div id="main-page">
+     <div class="top-bar"> </div>
+ 
+     <div class="title">
+       <h1> Basniwal'store </h1>
+       <p>Join your Account for get more Discount</p>
+     </div>
+     <div class="form-btns">
+      <button class="s-btn">Sign In</button>
+      <button class="f-btn">Sign In with Facebook</button>
+      <a href="#" class="n-btn">New Account?</a>
+     </div>
+     
+     <div id="c">
+       <a href="#"><i class="fas fa-times"></i></a>
+     </div>
+     
+     
+  </div>
+  <div class="sign-in-page">
+    <form>
+      <input type="email" placeholder="E-mail" />
+      <input type="password" placeholder="Password" />
+     <button style="color: white; 
+         background: #ffd2d7"> 
+               sign In </button>
+    </form>
+  <script src="js/index.js"></script>
+  </div>
+  <div class="sign-up-page">
+    <form>
+      <input type="email" placeholder="E-mail" />
+      <input type="password" placeholder="Password" />
+      <input type="password" placeholder="Repeat-Password" />
+     <button style="color: white; 
+         background: #ffd2d7"> 
+               sign Up </button>
+    </form>
+  </div>
+  
+  
+</section>
+ <div class="bg-circule"> </div>
+ 
+  <script type="text/javascript" src="js/jQuery.js"></script>
+  <script type="text/javascript">
+$(document).on('click','.s-btn',function(){$('.sign-in').addClass('active-sign-in'). siblings('active-sign-in').removeClass('active-sign-up')
+  });
+  
+$(document).on('click','.n-btn',function(){$('.sign-in').addClass('active-sign-up'). siblings('active-sign-in').removeClass('active-sign-in')
+  });
+    
+  </script>
+</body>
+</html>
